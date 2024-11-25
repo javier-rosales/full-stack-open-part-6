@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const anecdoteSlice = createSlice({
+const filterSlice = createSlice({
   name: 'anecdotes',
   initialState: '',
   reducers: {
@@ -10,5 +10,5 @@ const anecdoteSlice = createSlice({
   }
 })
 
-export const { filterChange } = anecdoteSlice.actions
-export default anecdoteSlice.reducer
+export const { filterChange } = filterSlice.actions
+export default filterSlice.reducer
